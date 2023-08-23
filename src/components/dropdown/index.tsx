@@ -28,7 +28,7 @@ const Dropdown: React.FC = () => {
   },[value])
 
   return (
-    <div className="app">
+    // <div className="app">
       <div className="selectOption">
         <input
           onClick={()=>{setOpenSelect(true);}}
@@ -53,7 +53,7 @@ const Dropdown: React.FC = () => {
           })} 
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

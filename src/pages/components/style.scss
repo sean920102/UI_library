@@ -1,0 +1,24 @@
+.container{
+  display: flex;
+}
+article{
+  border:2px solid white;
+  width:500px;
+  min-height: 200px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  position: relative;
+  .title{
+    color: white;
+    background-color: #242424;
+    position: absolute;
+    transform: translateY(-120%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 5px;
+  }
+  main{
+    margin: 5px 0;
+  }
+}

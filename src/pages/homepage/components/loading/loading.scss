@@ -1,0 +1,16 @@
+  #app-loading-icon {
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    transition: opacity 250ms, transform 250ms;
+    z-index: 2;
+
+    i {
+      animation: 2s spin ease-in-out infinite;
+      color: white;
+      font-size: 2em;
+    }
+  }

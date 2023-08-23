@@ -1,0 +1,33 @@
+:root{
+  --background:#2c2c2c
+}
+.btn{
+  border: 8px solid;
+  outline:2px solid;
+  color:white;
+  background-color: var(--background);
+  outline-color: white;
+  outline-offset: 0px;
+  text-shadow: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  max-width: 160px;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  transition: all 350ms cubic-bezier(
+    .36,.63,.5,.73
+  );
+  &:hover{
+    // border: 2px solid #FF9950;
+    outline-color: rgba(255,255,255,0);
+    outline-offset: 15px;
+    color:#FF9950;
+  }
+}
