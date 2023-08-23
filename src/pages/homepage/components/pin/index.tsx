@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { UserStatusContext } from "./../../context/userStatus";
 import { N } from "../../services/format";
+import { useNavigate } from "react-router-dom";
 
 enum UserStatus {
   LoggedIn = "Logged In",
@@ -81,7 +82,7 @@ export const Pin: React.FC = () => {
       setPinTo("");
     }
   }, [userStatus]);
-
+  const go = useNavigate();
   React.useEffect(() => {
     if (pin.length === 4) {
       const verify = async (): Promise<void> => {
@@ -90,6 +91,7 @@ export const Pin: React.FC = () => {
 
           if (await LogInUtility.verify(pin)) {
             setUserStatusTo(UserStatus.LoggedIn);
+            // go('/components');
           }
         } catch (err) {
           console.error(err);

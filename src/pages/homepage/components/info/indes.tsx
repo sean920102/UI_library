@@ -1,5 +1,6 @@
 import React from "react";
 import { T,N } from "../../services/format";
+import "./info.scss"
 
 interface IInfoProps {
   id?: string;

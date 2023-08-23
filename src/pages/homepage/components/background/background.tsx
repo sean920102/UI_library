@@ -1,6 +1,6 @@
 import { UserStatusContext } from "./../../context/userStatus";
 import React from "react";
-
+import './background.scss'
 enum UserStatus {
   LoggedIn = "Logged In",
   LoggingIn = "Logging In",
