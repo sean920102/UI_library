@@ -82,7 +82,7 @@ export const Pin: React.FC = () => {
       setPinTo("");
     }
   }, [userStatus]);
-  const go = useNavigate();
+  // const go = useNavigate();
   React.useEffect(() => {
     if (pin.length === 4) {
       const verify = async (): Promise<void> => {

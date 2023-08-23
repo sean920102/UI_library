@@ -15,7 +15,7 @@ enum UserStatus {
 }
 
 const Main: React.FC = () => {
-  const { userStatus, setUserStatusTo } = UserStatusContext();
+  const { userStatus } = UserStatusContext();
 
   const getStatusClass = (): string => {
     return userStatus.replace(/\s+/g, "-").toLowerCase();
@@ -26,7 +26,7 @@ const Main: React.FC = () => {
       <div id="app" className={getStatusClass()}>
         <Info id="app-info" />
         <Pin />
-        {/* <Menu /> */}
+        <Menu />
         <Background />
         <div id="sign-in-button-wrapper">
           <UserStatusBtn
